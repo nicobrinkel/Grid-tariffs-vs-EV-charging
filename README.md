@@ -4,26 +4,21 @@
 ![Static Badge](https://img.shields.io/badge/MADE_WITH-PYTHON_-orange?style=for-the-badge)
 
 [![matplotlib](https://img.shields.io/badge/matplotlib-3.8.0-blue.svg)](https://pypi.org/project/matplotlib/3.8.0/)
-[![numpy](https://img.shields.io/badge/numpy-1.22.3-blue.svg)](https://pypi.org/project/numpy/1.22.3/)
-[![pandas](https://img.shields.io/badge/pandas-1.4.3-blue.svg)](https://pypi.org/project/pandas/1.4.3/)
-[![tqdm](https://img.shields.io/badge/tqdm-4.62.3-blue.svg)](https://pypi.org/project/tqdm/4.62.3/)
+[![numpy](https://img.shields.io/badge/numpy-1.26.2-blue.svg)](https://pypi.org/project/numpy/1.26.2/)
+[![pandas](https://img.shields.io/badge/pandas-2.1.4-blue.svg)](https://pypi.org/project/pandas/2.1.4/)
+[![tqdm](https://img.shields.io/badge/tqdm-4.65.0-blue.svg)](https://pypi.org/project/tqdm/4.65.0/)
 [![Gurobi Version](https://img.shields.io/badge/Gurobi-10.0.2-blue.svg)](https://www.gurobi.com/)
 
-This repository contains the codes and results which is published in the paper titled: **"Unlocking the full potential of smart charging: Addressing paused and delayed charging problems in electric vehicles"**.
+This repository contains the codes and results of the manuscript titled: **"Can grid tariffs be fair and efficient? A comprehensive evaluation of tariff designs for smart electric vehicle integration"**.
 
-The following repository is maintained by [Nico Brinkel](https://github.com/nicobrinkel) and [Nanda Kishor Panda](https://github.com/nkpanda97)
+The following repository is maintained by [Nico Brinkel](https://github.com/nicobrinkel) and Floris van Montfoort.
 
-<inkline>
-  <picture>
-    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" type="image/webp">
-    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif" alt="🌟" width="25" height="25">
-  </picture>
-</inkline> <span style="font-size:1.8em;font-style:italic">Highlights</span>
+Highlights:
 
-&#x2705; Many electric vehicle models lack the technical capabilities for effective smart charging, as they cannot handle charging pauses or delays. 🚗 🚙  <br>
-&#x2705; Technical charging tests reveal that around one-third of tested car models suffer from these charging issues. <br>
-&#x2705; Model simulations suggest that eliminating these problems would double the smart charging potential for all applications. <br>
-&#x2705; Concrete legal and practical solutions are proposed to address these issues. ⚖️ <br>
+- Grid tariff reforms are needed incentivize efficient grid use and ensure a fair allocation of costs in the face of rising electrification and grid congestion.<br>
+- This work aims to comprehensively evaluate grid tariff designs based on regulatory principles, specifically focusing on the impact on EV charging patterns.<br>
+- Six grid tariff structures are evaluated based on four performance indicators, linked to regulatory principles.<br>
+- No single tariff structure excels across all regulatory principles. Capacity-based tariff structures lead to highest system efficiency.
 
 ## File organization
 
