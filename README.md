@@ -3,7 +3,7 @@
 
 ![Static Badge](https://img.shields.io/badge/MADE_WITH-PYTHON_-orange?style=for-the-badge)
 
-[![matplotlib](https://img.shields.io/badge/matplotlib-3.5.1-blue.svg)](https://pypi.org/project/matplotlib/3.5.1/)
+[![matplotlib](https://img.shields.io/badge/matplotlib-3.8.0-blue.svg)](https://pypi.org/project/matplotlib/3.8.0/)
 [![numpy](https://img.shields.io/badge/numpy-1.22.3-blue.svg)](https://pypi.org/project/numpy/1.22.3/)
 [![pandas](https://img.shields.io/badge/pandas-1.4.3-blue.svg)](https://pypi.org/project/pandas/1.4.3/)
 [![tqdm](https://img.shields.io/badge/tqdm-4.62.3-blue.svg)](https://pypi.org/project/tqdm/4.62.3/)
