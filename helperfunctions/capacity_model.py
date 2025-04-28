@@ -113,6 +113,7 @@ def capacity_tariffs(charging_session_data, timesteplist, CS, DA_prices, dynamic
                         p_ch_session[session][timesteplist_session[i]] * i for i in range(len(timesteplist_session))
                     )
                 )
+            m.addConstr(C_priority_tot == gp.quicksum(C_priority_session[session] for session in charging_session_data.index))
 
             # Define total power at each future timestep
             for t in timesteplist_remaining:
@@ -165,7 +166,7 @@ def capacity_tariffs(charging_session_data, timesteplist, CS, DA_prices, dynamic
 
         else:
             # No active sessions at this timestep
-            resultdf.at[timestep, 'P_tot'] = 0
+            resultdf.at[timestep, CS] = 0
 
     # Only return the total system power (CS column)
     resultdf = pd.DataFrame(resultdf[CS])

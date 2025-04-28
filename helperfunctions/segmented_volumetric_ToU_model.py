@@ -101,7 +101,7 @@ def segmented_volumetric_ToU(charging_session_data, timesteplist, CS, grid_tarif
         m.addConstr(p_tot[t] == p_tot_pricecat1[t] + p_tot_pricecat2[t] + p_tot_pricecat3[t])
     
     # Add a constraint for the total priority cost across all sessions.
-    m.addConstr(C_priority_tot == gp.quicksum(C_priority_session[session] for session in charging_sessions_active_at_t.index))
+    m.addConstr(C_priority_tot == gp.quicksum(C_priority_session[session] for session in charging_session_data.index))
     
     # Add constraints for dynamic retail prices if applicable.
     if dynamic_retail_prices_considered:
