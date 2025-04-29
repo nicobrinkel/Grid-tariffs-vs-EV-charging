@@ -76,11 +76,11 @@ def capacity_tariffs(charging_session_data, timesteplist, CS, DA_prices, dynamic
                 vol = charging_session_data_timestep.loc[session, 'Charging demand (kWh)']
 
                 # Determine already charged volume (if the session started before the current timestep)
-                if timestep == arrival_time:
-                    previously_charged_volume = 0
-                else:
+                if session in resultdf.columns:\
                     previously_charged_volume = resultdf[session].sum() * delta_t
-
+                else:
+                    previously_charged_volume = 0
+                    
                 # Filter future timesteps for this session
                 timesteplist_session = timesteps_index[
                     (timesteps_index >= arrival_time) & (timesteps_index < departure_time)
@@ -113,7 +113,7 @@ def capacity_tariffs(charging_session_data, timesteplist, CS, DA_prices, dynamic
                         p_ch_session[session][timesteplist_session[i]] * i for i in range(len(timesteplist_session))
                     )
                 )
-            m.addConstr(C_priority_tot == gp.quicksum(C_priority_session[session] for session in charging_session_data.index))
+            m.addConstr(C_priority_tot == gp.quicksum(C_priority_session[session] for session in charging_session_data_timestep.index))
 
             # Define total power at each future timestep
             for t in timesteplist_remaining:
