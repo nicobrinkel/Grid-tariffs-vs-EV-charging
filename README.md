@@ -42,8 +42,9 @@ The repository is organized as follows:
 - <img src="Jupyter_logo.png" alt="python logo" width="15" height="15"> [main.ipynb](modelling_notebook.py): Contains the code to perform the model simulations conducted in the paper.
 - <img src="Jupyter_logo.png" alt="python logo" width="15" height="15"> [main.ipynb](figure_notebook.py): Contains the code to create the figures of the paper from the provided source data.
 
-- [.gitignore](.gitignore): Contains the files to be ignored by git
-- [LICENSE](LICENSE): Contains the license information
+- [requirements.txt](.requirements.txt): Contains the package versions used in Python for the conducted analysis.
+- [.gitignore](.gitignore): Contains the files to be ignored by git.
+- [LICENSE](LICENSE): Contains the license information.
 
 
 ## Installation

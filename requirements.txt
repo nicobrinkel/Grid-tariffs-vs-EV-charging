@@ -1,7 +1,6 @@
-gurobipy==11.0.1
-matplotlib==3.5.1
-numpy==1.22.3
-pandas==1.4.3
-pytz==2022.1
-seaborn==0.11.2
-tqdm==4.62.3
+gurobipy==12.0.1
+numpy==2.2.5
+pandas==2.2.3
+pytz==2024.1
+matplotlib==3.9.2
+seaborn==0.13.2
