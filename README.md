@@ -25,22 +25,23 @@ Highlights:
 The repository is organized as follows:
 
 - 📁 [data](data/): Contains the data used in the paper. This folder contains the following data:
-    - [Day ahead prices for the Netherlands (2022) [CSV]](data/DA_prices_NL.csv) 
-    - [Day ahead prices for the Netherlands (2022) [PKL]](data/DA_prices_NL.pkl)
-    - [Sample of 100 EV charging sessions [CSV]](data/ev_sample_data.csv) 
-    - [Example of non-EV load profiles [PKL]](data/NonEVload_example.pkl) 
-    - [Excel containing source data for all figures [XLSX]](<data/Source Data.xlsx>)
+    - [Day ahead prices for the Netherlands (2022) [PKL]](data/day_ahead_market_prices_NL.pkl) 
+    - [Sample of EV charging sessions for two charging stations [PKL]](data/charging_session_data_sample.pkl) 
+    - [Household consumption profiles (simulated) for 650 households [PKL]](data/household_profiles.pkl) 
+    - [Excel containing source data for all figures [XLSX]](<data/source data.xlsx>)
 
-- 📁 [helper_functions](matlab_functions/): Contains the required functions needed to run the [main](main.ipynb) python notebook. This folder contains the following functions:
-    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [cost_minimization_model.py](helper_functions/cost_minimization_model.py): Contains the functions to run the cost minimization model
-    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [flexibility_offering_model.py](helper_functions/flexibility_offering_model.py): Contains the functions to run the flexibility offering model
-    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [peak_minimization_model.py](helper_functions/peak_minimization_model.py): Contains the functions to run the peak minimization model
-    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [uncontrolled_charging_costs_model.py](helper_functions/uncontrolled_charging_costs_model.py): Contains the functions to run the uncontrolled charging cost model
-    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [uncontrolled_charging_model.py](helper_functions/uncontrolled_charging_model.py): Contains the functions to run the uncontrolled charging model
-    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [uncontrolled_charging_peak_model.py](helper_functions/uncontrolled_charging_peak_model.py): Contains the functions to run the uncontrolled charging peak model
+- 📁 [helperfunctions](helperfunctions/): Contains the required functions needed to run the [modelling_notebook](main.ipynb). This folder contains the following functions:
+    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [uncontrolled_charging_model.py](helperfunctions/uncontrolled_charging_model.py): Contains the functions to model EV charging profiles when considering uncontrolled charging.
+    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [volumetric_ToU_model.py](helperfunctions/volumetric_ToU_model.py): Contains the functions to optimize EV charging profiles under a volumetric ToU grid tariff structure.
+    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [segmented_volumetric_ToU_model.py](helperfunctions/segmented_volumetric_ToU_model.py): Contains the functions to optimize EV charging profiles under segmented volumetric ToU grid tariff structure.
+    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [capacity_prepartion_model.py](helperfunctions/capacity_prepartion_model.py): Contains the functions to perform the required preparatory steps to model EV charging profiles under a capacity grid tariff structure.
+    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [capacity_model.py](helperfunctions/capacity_model.py): Contains the functions to model EV charging profiles under a capacity grid tariff structure.
+    - <img src="python_logo.png" alt="python logo" width="15" height="15"> [capacity_subscription_model.py](helperfunctions/capacity_subscription_model.py): Contains the functions to model EV charging profiles under a capacity-subscription grid tariff structure.
     
 
-- <img src="Jupyter_logo.png" alt="python logo" width="15" height="15"> [main.ipynb](main.py): Contains the main code to run the results of the paper and other functions.
+- <img src="Jupyter_logo.png" alt="python logo" width="15" height="15"> [main.ipynb](modelling_notebook.py): Contains the code to perform the model simulations conducted in the paper.
+- <img src="Jupyter_logo.png" alt="python logo" width="15" height="15"> [main.ipynb](figure_notebook.py): Contains the code to create the figures of the paper from the provided source data.
+
 - [.gitignore](.gitignore): Contains the files to be ignored by git
 - [LICENSE](LICENSE): Contains the license information
 
@@ -74,9 +75,9 @@ For the optimization solver, we used [![gurobipy](https://img.shields.io/badge/g
 If you re-use part of the code or some of the functions, please consider citing the repository:
 
 ```bibtex
-@software{brinkel_2024_10932796,
+@software{brinkel_vanmontfoort,
   author       = {Brinkel, Nico and
-                  Nanda Kishor Panda},
+                  van Montfoort, Floris},
   title        = {{ROBUST-NL/paused\_ev\_charging: Publication ready 
                    code}},
   month        = apr,
@@ -90,5 +91,5 @@ If you re-use part of the code or some of the functions, please consider citing 
 
 ## Funding
 
-This study was supported by the Topsector Energy subsidy scheme of the Dutch Ministry of Economic Affairs and Climate Policy through the project "Slim laden met flexibele nettarieven in Utrecht ([FLEET](https://ssc-fleet.nl/))", by the Dutch Ministry of Economic Affairs and Climate Policy and the Dutch Ministry of the Interior and Kingdom Relations through the [ROBUST](https://tki-robust.nl/) project under grant agreement MOOI32014 and by the European Union’s Horizon Europe Research and Innovation program through the [SCALE](https://scale-horizon.eu/) project (Grant Agreement No. 101056874).
+This study was supported by the Dutch Ministry of Economic Affairs and Climate Policy and the Dutch Ministry of the Interior and Kingdom Relations through the [ROBUST](https://tki-robust.nl/) project under grant agreement MOOI32014 and by the European Union’s Horizon Europe Research and Innovation program through the [SCALE](https://scale-horizon.eu/) project (Grant Agreement No. 101056874).
 
