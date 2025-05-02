@@ -55,7 +55,7 @@ git clone <repo-link>
 ```
 
 ***Step 2:*** Install the required packages
-The code is tested on [![Python Version](https://img.shields.io/badge/Python-3.10.13-blue.svg)](https://www.python.org/downloads/release/python-3812/). The required packages are listed in the [requirements.txt](requirements.txt) file. To install the required packages, run the following command:
+The code is tested on [![Python Version](https://img.shields.io/badge/Python-3.12.7-blue.svg)](https://www.python.org/downloads/release/python-3127/). The required packages are listed in the [requirements.txt](requirements.txt) file. To install the required packages, run the following command:
 
 ```bash
 pip install -r requirements.txt
@@ -67,8 +67,8 @@ or
 conda install --file requirements.txt
 ```
 
-For the optimization solver, we used [![gurobipy](https://img.shields.io/badge/gurobipy-11.0.1-blue.svg)](https://www.gurobi.com/)
-. You can install the Gurobi license by following the instructions in the [Gurobi Documentation](https://www.gurobi.com/documentation/10.0/quickstart_mac/installing_the_anaconda_py.html) for Mac and Linux and [Gurobi Documentation](https://www.gurobi.com/documentation/10.0/quickstart_windows/installing_the_anaconda_py.html) for Windows.
+For the optimization solver, we used [![gurobipy](https://img.shields.io/badge/gurobipy-12.0.1-blue.svg)](https://www.gurobi.com/)
+. You can install the Gurobi license by following the instructions in the [Gurobi Documentation](https://support.gurobi.com/hc/en-us/articles/12684663118993-How-do-I-obtain-a-Gurobi-license).
 
 ## Cite this work
 
