@@ -3,11 +3,10 @@
 
 ![Static Badge](https://img.shields.io/badge/MADE_WITH-PYTHON_-orange?style=for-the-badge)
 
-[![matplotlib](https://img.shields.io/badge/matplotlib-3.8.0-blue.svg)](https://pypi.org/project/matplotlib/3.8.0/)
-[![numpy](https://img.shields.io/badge/numpy-1.26.2-blue.svg)](https://pypi.org/project/numpy/1.26.2/)
-[![pandas](https://img.shields.io/badge/pandas-2.1.4-blue.svg)](https://pypi.org/project/pandas/2.1.4/)
-[![tqdm](https://img.shields.io/badge/tqdm-4.65.0-blue.svg)](https://pypi.org/project/tqdm/4.65.0/)
-[![Gurobi Version](https://img.shields.io/badge/Gurobi-10.0.2-blue.svg)](https://www.gurobi.com/)
+[![matplotlib](https://img.shields.io/badge/matplotlib-3.9.2-blue.svg)](https://pypi.org/project/matplotlib/3.9.2/)
+[![numpy](https://img.shields.io/badge/numpy-2.2.5-blue.svg)](https://pypi.org/project/numpy/2.2.5/)
+[![pandas](https://img.shields.io/badge/pandas-2.2.3-blue.svg)](https://pypi.org/project/pandas/2.2.3/)
+[![Gurobi Version](https://img.shields.io/badge/Gurobi-12.0.1-blue.svg)](https://www.gurobi.com/)
 
 This repository contains the codes and results of the manuscript titled: **"Can grid tariffs be fair and efficient? A comprehensive evaluation of tariff designs for smart electric vehicle integration"**.
 
