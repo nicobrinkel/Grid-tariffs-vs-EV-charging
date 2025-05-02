@@ -38,7 +38,7 @@ The repository is organized as follows:
     - <img src="python_logo.png" alt="python logo" width="15" height="15"> [capacity_subscription_model.py](helperfunctions/capacity_subscription_model.py): Contains the functions to model EV charging profiles under a capacity-subscription grid tariff structure.
     
 
-- <img src="Jupyter_logo.png" alt="python logo" width="15" height="15"> [mmodelling_notebook.ipynb](modelling_notebook.ipynb): Contains the code to perform the model simulations conducted in the paper.
+- <img src="Jupyter_logo.png" alt="python logo" width="15" height="15"> [modelling_notebook.ipynb](modelling_notebook.ipynb): Contains the code to perform the model simulations conducted in the paper.
 - <img src="Jupyter_logo.png" alt="python logo" width="15" height="15"> [figure_notebook.ipynb](figure_notebook.ipynb): Contains the code to create the figures of the paper from the provided source data.
 
 - [requirements.txt](.requirements.txt): Contains the package versions used in Python for the conducted analysis.
