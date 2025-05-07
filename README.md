@@ -14,10 +14,11 @@ The following repository is maintained by [Nico Brinkel](https://github.com/nico
 
 Highlights:
 
-- Grid tariff reforms are needed incentivize efficient grid use and ensure a fair allocation of costs in the face of rising electrification and grid congestion.<br>
-- This work aims to comprehensively evaluate grid tariff designs based on regulatory principles, specifically focusing on the impact on EV charging patterns.<br>
-- Six grid tariff structures are evaluated based on four performance indicators, linked to regulatory principles.<br>
-- No single tariff structure excels across all regulatory principles. Capacity-based tariff structures lead to highest system efficiency.
+- Grid tariff reforms key for efficiency and fair cost allocation as grid strain rises.<br>
+- We evaluate grid tariff designs on regulatory principles, focusing on EV charging.<br>
+- A novel modelling framework is presented for comprehensive assessment of different tariff designs.<br>
+- No single tariff design excels across all regulatory principles.<br>
+- Capacity-based tariff structures lead to highest system efficiency.
 
 ## File organization
 
@@ -78,8 +79,7 @@ If you re-use part of the code or some of the functions, please consider citing 
 @software{brinkel_vanmontfoort,
   author       = {Brinkel, Nico and
                   van Montfoort, Floris},
-  title        = {{ROBUST-NL/paused\_ev\_charging: Publication ready 
-                   code}},
+  title        = {{Code and data repository for the paper "Can grid tariffs be fair and efficient? A comprehensive evaluation of tariff designs for smart electric vehicle integration"}},
   month        = apr,
   year         = 2024,
   publisher    = {Zenodo},
