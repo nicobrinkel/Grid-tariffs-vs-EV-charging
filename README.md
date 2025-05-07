@@ -1,5 +1,5 @@
 
-# Grid Tariffs vs EV charging[![DOI](https://zenodo.org/badge/776002789.svg)](https://zenodo.org/doi/10.5281/zenodo.10932795)
+# Grid Tariffs vs EV charging[![DOI](https://zenodo.org/badge/776002789.svg)](https://zenodo.org/doi/10.5281/zenodo.15356316)
 
 ![Static Badge](https://img.shields.io/badge/MADE_WITH-PYTHON_-orange?style=for-the-badge)
 
@@ -80,12 +80,12 @@ If you re-use part of the code or some of the functions, please consider citing 
   author       = {Brinkel, Nico and
                   van Montfoort, Floris},
   title        = {{Code and data repository for the paper "Can grid tariffs be fair and efficient? A comprehensive evaluation of tariff designs for smart electric vehicle integration"}},
-  month        = apr,
-  year         = 2024,
+  month        = may,
+  year         = 2025,
   publisher    = {Zenodo},
   version      = {v0.1.0},
-  doi          = {10.5281/zenodo.10932796},
-  url          = {https://doi.org/10.5281/zenodo.10932796}
+  doi          = {10.5281/zenodo.15356316},
+  url          = {https://doi.org/10.5281/zenodo.15356316}
 }
 ```
 
